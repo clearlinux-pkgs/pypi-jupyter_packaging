@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_packaging
 Version  : 0.12.0
-Release  : 30
+Release  : 32
 URL      : https://files.pythonhosted.org/packages/f1/b5/7330252b04d591b2154ff3510f6e05e39fa14d6f116c9062087c515d9a20/jupyter_packaging-0.12.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f1/b5/7330252b04d591b2154ff3510f6e05e39fa14d6f116c9062087c515d9a20/jupyter_packaging-0.12.0.tar.gz
 Summary  : Jupyter Packaging Utilities.
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648231826
+export SOURCE_DATE_EPOCH=1648237340
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -86,6 +86,9 @@ pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
+## Remove excluded files
+rm -f %{buildroot}*/usr/lib/python3.10/site-packages/tests/*.py
+rm -f %{buildroot}*/usr/lib/python3.10/site-packages/tests/__pycache__/*
 
 %files
 %defattr(-,root,root,-)
