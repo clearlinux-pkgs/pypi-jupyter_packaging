@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_packaging
 Version  : 0.12.0
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/f1/b5/7330252b04d591b2154ff3510f6e05e39fa14d6f116c9062087c515d9a20/jupyter_packaging-0.12.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f1/b5/7330252b04d591b2154ff3510f6e05e39fa14d6f116c9062087c515d9a20/jupyter_packaging-0.12.0.tar.gz
 Summary  : Jupyter Packaging Utilities.
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648237340
+export SOURCE_DATE_EPOCH=1649775511
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
