@@ -1,5 +1,5 @@
 PKG_NAME := pypi-jupyter_packaging
-URL = https://files.pythonhosted.org/packages/f1/b5/7330252b04d591b2154ff3510f6e05e39fa14d6f116c9062087c515d9a20/jupyter_packaging-0.12.0.tar.gz
+URL = https://files.pythonhosted.org/packages/b6/6f/d83e50a3ffc279b4d8dca46d5f72f35617587ec78cadcbccb4990ab23336/jupyter_packaging-0.12.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
