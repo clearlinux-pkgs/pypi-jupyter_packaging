@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_packaging
 Version  : 0.12.2
-Release  : 36
+Release  : 37
 URL      : https://files.pythonhosted.org/packages/ee/75/f0262da6134c6364c9246d20fba36f86b69e8ba7eed6ec42c1520658b9cf/jupyter_packaging-0.12.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/75/f0262da6134c6364c9246d20fba36f86b69e8ba7eed6ec42c1520658b9cf/jupyter_packaging-0.12.2.tar.gz
 Summary  : Jupyter Packaging Utilities.
@@ -64,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655747801
+export SOURCE_DATE_EPOCH=1656385711
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -105,7 +105,7 @@ popd
 ## Remove excluded files
 rm -f %{buildroot}*/usr/lib/python3.10/site-packages/tests/*.py
 rm -f %{buildroot}*/usr/lib/python3.10/site-packages/tests/__pycache__/*
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
