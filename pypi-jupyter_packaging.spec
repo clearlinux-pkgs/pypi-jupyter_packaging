@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_packaging
 Version  : 0.12.2
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/ee/75/f0262da6134c6364c9246d20fba36f86b69e8ba7eed6ec42c1520658b9cf/jupyter_packaging-0.12.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/75/f0262da6134c6364c9246d20fba36f86b69e8ba7eed6ec42c1520658b9cf/jupyter_packaging-0.12.2.tar.gz
 Summary  : Jupyter Packaging Utilities.
